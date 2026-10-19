@@ -1,10 +1,8 @@
-public class Main {
-    public static void main(String[] args) {
-        String text = "J@va the be$t!123";
-        System.out.println(expandText(text));
-    }
-
-    public static String expandText(String text) {
+public class Reverse {
+    public String expandText(String text) {
+        if (text == null || text.isEmpty()) {
+            text = "";
+        }
         int size = text.length();
         char[] charsOfText = text.toCharArray();
         int left = 0;
